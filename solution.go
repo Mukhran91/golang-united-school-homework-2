@@ -1,8 +1,6 @@
 package square
 
-import (
-	"math"
-)
+import "math"
 
 // Define custom int type to hold sides number and update CalcSquare signature by replacing #yourTypeNameHere#
 
@@ -24,13 +22,10 @@ func CalcSquare(sideLen float64, sidesNum numSides) float64 {
 	switch sidesNum {
 	case 3:
 		return math.Sqrt(3.0) / 4.0 * math.Pow(sideLen, 2.0)
-
 	case 4:
 		return math.Pow(sideLen, 2.0)
-
 	case 0:
 		return math.Pi * math.Pow(sideLen, 2.0)
-
 	default:
 		return 0
 	}
