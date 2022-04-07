@@ -17,7 +17,7 @@ type numSides int
 const (
 	SidesTriangle numSides = 3
 	SidesSquare   numSides = 4
-	SideCircle    numSides = 0
+	SidesCircle   numSides = 0
 )
 
 func CalcSquare(sideLen float64, sidesNum numSides) float64 {
